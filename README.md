@@ -1,0 +1,4 @@
+# JavaClassLoader
+自定义 java 的 ClassLoader
+
+加载Class文件，需要注意的是，不要在项目工程中存在要加载的Java文件，否则就不会使用DiskClassLoader来加载，而是AppClassLoader来负责加载，这样我们定义DiskClassLoader就变得毫无意义。
